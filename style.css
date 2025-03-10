@@ -1,0 +1,115 @@
+
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Container for the country info form */
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 300px;
+}
+
+input {
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Main country info section */
+#country-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+}
+
+/* Capital, Population, Region Text */
+#capital, #population, #region {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Flag styling */
+#flag img {
+    width: 80px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Bordering countries section */
+#bordering-countries {
+    margin-top: 30px;
+    width: 350px;
+    max-width: 90%;
+}
+
+#countries {
+    list-style: none;
+    padding: 0;
+}
+
+#countries li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#countries img {
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input, button {
+        width: 250px;
+    }
+
+    #country-info, #bordering-countries {
+        width: 100%;
+        max-width: none;
+    }
+}

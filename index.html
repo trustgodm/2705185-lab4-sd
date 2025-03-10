@@ -1,1 +1,28 @@
+<!DOCTYPE html>
 
+<head>
+    
+    <title>Country Info</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <input id="name" type="text" name="name" placeholder="Enter country name">
+    <button onclick="fetchCountries(document.getElementById('name').value)">Submit</button>
+    
+    <section id="country-info">
+        <p id="capital">Capital: </p>
+        <p id="population">Population: </p>
+        <p id="region">Region: </p>
+        <div id="flag"></div> <!-- This is where we will display the flag -->
+    </section>
+    <br></br>
+    
+    <section id="bordering-countries">
+        <ul id="countries">
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
